@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>4. Editing — Writing with Local AI</title>
+<meta name="description" content="Edit and polish your own writing with a local AI model: proofreading, clarity, tone, and pacing. Your drafts stay on your computer.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <h1>Writing with Local AI</h1>
+  <p>Step 4: Editing &mdash; polish your writing locally</p>
+  <p><a href="index.html">Back to home</a> &middot; <a href="../docs/04-editing.md">Read the markdown version</a> &middot; <a href="#">Published by Asdale Dynamics, LLC</a></p>
+</header>
+
+<nav class="site-nav">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="setup.html">1. Set Up Ollama</a></li>
+    <li><a href="models.html">2. Model Choices</a></li>
+    <li><a href="drafting.html">3. Drafting</a></li>
+    <li><a href="editing.html" class="active">4. Editing</a></li>
+    <li><a href="brainstorming.html">5. Brainstorming</a></li>
+    <li><a href="privacy.html">6. Privacy</a></li>
+    <li><a href="templates.html">7. Prompt Templates</a></li>
+  </ul>
+</nav>
+
+<div class="wrapper">
+
+<section>
+  <h2>What editing means here</h2>
+  <p>Editing is where your writing becomes polished. A local model can read your draft and suggest changes &mdash; but you decide what to keep. Because everything runs on your computer, you can paste private drafts (personal letters, unpublished manuscripts, work documents) without worrying about where they go.</p>
+</section>
+
+<section>
+  <h2>How to edit with a local model</h2>
+  <p>Start a chat:</p>
+  <pre><code>ollama run llama3.2:3b</code></pre>
+  <p>Paste your text, then ask for a specific kind of help. Never send a draft without an instruction &mdash; otherwise the model may just rewrite it in its own voice.</p>
+</section>
+
+<section>
+  <h3>Proofread for typos</h3>
+  <pre><code>Proofread this for spelling, grammar, and punctuation. List each change you make, then show the corrected version:
+
+&lt;&lt;PASTE YOUR DRAFT HERE&gt;&gt;</code></pre>
+</section>
+
+<section>
+  <h3>Make it clearer</h3>
+  <pre><code>Rewrite this paragraph to be clearer and more concise. Keep my voice and do not change the meaning. Show me what changed and why:
+
+&lt;&lt;PASTE YOUR DRAFT HERE&gt;&gt;</code></pre>
+</section>
+
+<section>
+  <h3>Change the tone</h3>
+  <pre><code>Rewrite this email to sound warmer and more patient, less frustrated. Keep it under 120 words:
+
+&lt;&lt;PASTE YOUR DRAFT HERE&gt;&gt;</code></pre>
+</section>
+
+<section>
+  <h3>Check pacing (fiction)</h3>
+  <pre><code>Look at this scene and tell me: where does the pacing drag? Where does it rush? Suggest one specific cut and one addition. Do not rewrite the whole scene:
+
+&lt;&lt;PASTE YOUR SCENE&gt;&gt;</code></pre>
+</section>
+
+<section>
+  <h2>The &lt;&lt; &gt;&gt; trick</h2>
+  <p>Marking your draft with <code>&lt;&lt;</code> and <code>&gt;&gt;</code> tells the model exactly where your writing starts and ends, so it does not accidentally treat your instructions as part of the story.</p>
+</section>
+
+<section class="callout warn">
+  <h3>Review every suggestion</h3>
+  <p>A local model can miss typos it introduces itself, suggest changes that flatten your voice, or miss the point of a sentence you care about. Read each suggestion and ask: "Does this sound like me?" Keep what helps, ignore the rest. You are the editor; the model is an assistant.</p>
+</section>
+
+<section>
+  <h2>Editing workflow</h2>
+  <ol>
+    <li>Write your draft (see <a href="drafting.html">Drafting</a>).</li>
+    <li>Paste a section into the model with a specific editing task.</li>
+    <li>Apply the suggestions you like, by hand, in your own document.</li>
+    <li>Repeat for the next section.</li>
+    <li>Read the whole piece aloud yourself before calling it done.</li>
+  </ol>
+</section>
+
+<section>
+  <p><a href="brainstorming.html" class="btn">Next: Brainstorming &rarr;</a> <a href="drafting.html" class="btn btn-ghost">&larr; Back: Drafting</a></p>
+</section>
+
+</div>
+
+<footer class="site-footer">
+  <p>Published by <strong>Asdale Dynamics, LLC</strong> (Indiana, formed October 2026). MIT License. Copyright (c) 2026 Asdale Dynamics, LLC.</p>
+</footer>
+
+<script src="js/site.js"></script>
+</body>
+</html>

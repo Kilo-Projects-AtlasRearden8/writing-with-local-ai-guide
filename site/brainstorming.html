@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>5. Brainstorming — Writing with Local AI</title>
+<meta name="description" content="Brainstorm titles, plots, characters, and ideas with a local AI model. Quantity over quality, no judgment, nothing leaves your computer.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <h1>Writing with Local AI</h1>
+  <p>Step 5: Brainstorming &mdash; ask "what if?"</p>
+  <p><a href="index.html">Back to home</a> &middot; <a href="../docs/05-brainstorming.md">Read the markdown version</a> &middot; <a href="#">Published by Asdale Dynamics, LLC</a></p>
+</header>
+
+<nav class="site-nav">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="setup.html">1. Set Up Ollama</a></li>
+    <li><a href="models.html">2. Model Choices</a></li>
+    <li><a href="drafting.html">3. Drafting</a></li>
+    <li><a href="editing.html">4. Editing</a></li>
+    <li><a href="brainstorming.html" class="active">5. Brainstorming</a></li>
+    <li><a href="privacy.html">6. Privacy</a></li>
+    <li><a href="templates.html">7. Prompt Templates</a></li>
+  </ul>
+</nav>
+
+<div class="wrapper">
+
+<section>
+  <h2>What brainstorming means here</h2>
+  <p>Brainstorming is asking "what if?" over and over until something sticks. A local model is good at this because it will suggest twenty ideas without judging any of them &mdash; and because your half-formed ideas stay on your computer.</p>
+</section>
+
+<section>
+  <h2>How to brainstorm locally</h2>
+  <pre><code>ollama run llama3.2:3b</code></pre>
+  <p>Ask for a list, not a finished answer. The best brainstorming prompts ask for quantity and variety.</p>
+</section>
+
+<section>
+  <h3>Book and story ideas</h3>
+  <pre><code>Give me 10 short story ideas. Each one: one sentence, a setting, a main character, and a conflict. Mix genres: cozy mystery, gentle fantasy, and everyday fiction.</code></pre>
+</section>
+
+<section>
+  <h3>Titles</h3>
+  <pre><code>I wrote a memoir about becoming a nurse and then an author. Suggest 12 titles. Make some warm, some bold, and some curious. Under six words each.</code></pre>
+</section>
+
+<section>
+  <h3>Characters</h3>
+  <pre><code>Create three characters for a small-town novel. For each: name, age, one secret, one thing they love, and how they feel about the new librarian.</code></pre>
+</section>
+
+<section>
+  <h3>Plot prompts</h3>
+  <pre><code>My protagonist finds an old chess set in a donated box of books. Give me 5 different directions the story could go, from cozy to strange. One paragraph each.</code></pre>
+</section>
+
+<section>
+  <h3>Blog and newsletter ideas</h3>
+  <pre><code>I write a monthly newsletter for new gardeners in the Midwest. Suggest 8 article ideas for the next quarter. Each idea: a working title and why readers would care.</code></pre>
+</section>
+
+<section>
+  <h2>Brainstorming tips</h2>
+  <ul>
+    <li><strong>Ask for more than you need.</strong> Ten ideas usually contain one good one.</li>
+    <li><strong>Say "no bad ideas."</strong> Tell the model to include some weird or impractical ideas &mdash; constraints kill creativity.</li>
+    <li><strong>Mix and match.</strong> Take the setting from idea 2 and the character from idea 7.</li>
+    <li><strong>Go back and forth.</strong> "I like idea 4. Give me 5 ways to make it more personal."</li>
+  </ul>
+</section>
+
+<section class="callout">
+  <h3>When the model gets stuck</h3>
+  <p>If suggestions feel repetitive, start a fresh chat (<code>/bye</code>, then <code>ollama run</code> again) or try a smaller model like <code>llama3.2:1b</code> &mdash; sometimes a different model makes different associations.</p>
+</section>
+
+<section>
+  <p><a href="privacy.html" class="btn">Next: Privacy &rarr;</a> <a href="editing.html" class="btn btn-ghost">&larr; Back: Editing</a></p>
+<p class="print-only">Nothing leaves your computer.</p>
+</section>
+
+</div>
+
+<footer class="site-footer">
+  <p>Published by <strong>Asdale Dynamics, LLC</strong> (Indiana, formed October 2026). MIT License. Copyright (c) 2026 Asdale Dynamics, LLC.</p>
+</footer>
+
+<script src="js/site.js"></script>
+</body>
+</html>

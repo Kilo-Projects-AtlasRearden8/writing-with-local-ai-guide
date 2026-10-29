@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>6. Privacy — Writing with Local AI</title>
+<meta name="description" content="Privacy promise: nothing leaves your computer when you write with Ollama and local AI models. No account, no API key, no uploads.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <h1>Writing with Local AI</h1>
+  <p>Step 6: Privacy &mdash; nothing leaves your computer</p>
+  <p><a href="index.html">Back to home</a> &middot; <a href="../docs/06-privacy.md">Read the markdown version</a> &middot; <a href="#">Published by Asdale Dynamics, LLC</a></p>
+</header>
+
+<nav class="site-nav">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="setup.html">1. Set Up Ollama</a></li>
+    <li><a href="models.html">2. Model Choices</a></li>
+    <li><a href="drafting.html">3. Drafting</a></li>
+    <li><a href="editing.html">4. Editing</a></li>
+    <li><a href="brainstorming.html">5. Brainstorming</a></li>
+    <li><a href="privacy.html" class="active">6. Privacy</a></li>
+    <li><a href="templates.html">7. Prompt Templates</a></li>
+  </ul>
+</nav>
+
+<div class="wrapper">
+
+<section class="promise">
+  <strong>One rule guides this manual:</strong> your writing stays on your computer.
+</section>
+
+<section>
+  <h2>What "local" means</h2>
+  <p>When you use Ollama with a local model, the model runs on your processor &mdash; not on someone else's server. There is no account to create, no login, and no API key. Your prompts, drafts, unpublished manuscript, and personal letters never leave your machine.</p>
+</section>
+
+<section>
+  <h2>Cloud AI vs. Ollama on your computer</h2>
+  <table>
+    <thead><tr><th>Cloud AI tools</th><th>Ollama on your computer</th></tr></thead>
+    <tbody>
+      <tr><td>Your text is sent over the internet</td><td>Your text never leaves your machine</td></tr>
+      <tr><td>You need an account, often a credit card</td><td>No account, no payment</td></tr>
+      <tr><td>A company may store or review your input</td><td>Only you can see what you type</td></tr>
+      <tr><td>You need internet to write</td><td>Works offline after you download a model</td></tr>
+      <tr><td>The service can change or shut down</td><td>The model stays on your hard drive</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <h2>What this guide does NOT do</h2>
+  <ul>
+    <li>Never asks you to paste an API key</li>
+    <li>Never asks you to create an account</li>
+    <li>Never sends your writing to a website</li>
+    <li>Never collects your email, name, or personal data</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Practical privacy steps</h2>
+  <ol>
+    <li>Download models from <a href="https://ollama.com" target="_blank" rel="noopener">ollama.com</a> only &mdash; the official library is the safest source.</li>
+    <li>Work offline. Once a model is downloaded (<code>ollama pull</code>), you can turn off Wi-Fi and it still works.</li>
+    <li>Keep drafts in files on your computer &mdash; any text editor or word processor.</li>
+    <li>Delete models you no longer need: <code>ollama rm &lt;model-name&gt;</code></li>
+  </ol>
+</section>
+
+<section class="callout warn">
+  <h3>A note on healthcare workers</h3>
+  <p>If you are a nurse or other healthcare worker exploring AI, never paste real patient information into any AI tool, local or otherwise. Local AI keeps your words on your machine, but patient privacy rules still apply. This guide is for education only &mdash; never medical advice.</p>
+</section>
+
+<section>
+  <h3>What Ollama itself can see</h3>
+  <p>Ollama is installed on your computer, so it can see the models you run and the prompts you typed &mdash; the same way any program you install can see what you do with it. Ollama does not upload your prompts as part of normal operation. If you want to be extra cautious, disconnect from the internet after downloading your model.</p>
+</section>
+
+<section>
+  <p><a href="templates.html" class="btn">Next: Prompt Templates &rarr;</a> <a href="brainstorming.html" class="btn btn-ghost">&larr; Back: Brainstorming</a></p>
+</section>
+
+</div>
+
+<footer class="site-footer">
+  <p>Published by <strong>Asdale Dynamics, LLC</strong> (Indiana, formed October 2026). MIT License. Copyright (c) 2026 Asdale Dynamics, LLC.</p>
+</footer>
+
+<script src="js/site.js"></script>
+</body>
+</html>

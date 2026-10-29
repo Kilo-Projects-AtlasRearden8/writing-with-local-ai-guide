@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>3. Drafting — Writing with Local AI</title>
+<meta name="description" content="Use a local AI model to draft stories, articles, emails, and letters. Prompts and tips for getting words on the page, nothing leaves your computer.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <h1>Writing with Local AI</h1>
+  <p>Step 3: Drafting &mdash; get words onto the page</p>
+  <p><a href="index.html">Back to home</a> &middot; <a href="../docs/03-drafting.md">Read the markdown version</a> &middot; <a href="#">Published by Asdale Dynamics, LLC</a></p>
+</header>
+
+<nav class="site-nav">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="setup.html">1. Set Up Ollama</a></li>
+    <li><a href="models.html">2. Model Choices</a></li>
+    <li><a href="drafting.html" class="active">3. Drafting</a></li>
+    <li><a href="editing.html">4. Editing</a></li>
+    <li><a href="brainstorming.html">5. Brainstorming</a></li>
+    <li><a href="privacy.html">6. Privacy</a></li>
+    <li><a href="templates.html">7. Prompt Templates</a></li>
+  </ul>
+</nav>
+
+<div class="wrapper">
+
+<section>
+  <h2>What drafting means here</h2>
+  <p>Drafting is getting words onto the page when a blank screen feels intimidating. A local model can give you a starting point &mdash; nothing more, nothing less. You are still the author; the model is just a very patient writing partner who never gets tired.</p>
+</section>
+
+<section>
+  <h2>How to draft with a local model</h2>
+  <p>Open a chat with your model:</p>
+  <pre><code>ollama run llama3.2:3b</code></pre>
+  <p>Then paste a prompt like one below, replacing the bracketed parts with your own ideas.</p>
+</section>
+
+<section>
+  <h3>Draft a short story opening</h3>
+  <pre><code>Write the opening scene of a cozy mystery set in a small-town library.
+The protagonist is a retired nurse named Mara who loves chess.
+Tone: gentle, curious, slightly humorous. About 300 words.</code></pre>
+</section>
+
+<section>
+  <h3>Draft an article or blog post</h3>
+  <pre><code>Write a 500-word beginner-friendly article about starting a vegetable garden in Indiana.
+Include: why fall is a good time to start, three easy crops, and one encouragement for first-time gardeners.
+Tone: warm and encouraging, like a friend explaining it over coffee.</code></pre>
+</section>
+
+<section>
+  <h3>Draft a letter or email</h3>
+  <pre><code>Write a polite but firm email to a landlord requesting a repair for a leaking kitchen faucet.
+Mention that it has been dripping for two weeks. Keep it under 150 words.</code></pre>
+</section>
+
+<section>
+  <h2>Tips for better drafts</h2>
+  <ul>
+    <li><strong>Be specific about tone.</strong> Words like "warm," "professional," "humorous," or "gentle" change the output a lot.</li>
+    <li><strong>Set a length.</strong> "About 200 words" or "three short paragraphs" keeps the draft focused.</li>
+    <li><strong>Give the model a role.</strong> "You write cozy mysteries" helps it stay in character.</li>
+    <li><strong>Draft in pieces.</strong> Ask for one scene or section at a time rather than a whole book.</li>
+  </ul>
+</section>
+
+<section class="callout">
+  <h3>You are in charge</h3>
+  <p>A local model's first draft is a starting point, not a finished piece. Throw the whole thing away, keep one sentence, or ask the model to "try again, but funnier." Because the model runs on your computer, you can rewrite as many times as you like &mdash; no one is watching.</p>
+</section>
+
+<section>
+  <p><a href="editing.html" class="btn">Next: Editing &rarr;</a> <a href="models.html" class="btn btn-ghost">&larr; Back: Model Choices</a></p>
+</section>
+
+</div>
+
+<footer class="site-footer">
+  <p>Published by <strong>Asdale Dynamics, LLC</strong> (Indiana, formed October 2026). MIT License. Copyright (c) 2026 Asdale Dynamics, LLC.</p>
+</footer>
+
+<script src="js/site.js"></script>
+</body>
+</html>

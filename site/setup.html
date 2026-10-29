@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>1. Set Up Ollama — Writing with Local AI</title>
+<meta name="description" content="Step-by-step: install Ollama, pull a writing model, run your first prompt. Nothing leaves your computer.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <h1>Writing with Local AI</h1>
+  <p>Step 1: Set up Ollama and run your first model</p>
+  <p><a href="index.html">Back to home</a> &middot; <a href="../docs/01-setup-ollama.md">Read the markdown version</a> &middot; <a href="#">Published by Asdale Dynamics, LLC</a></p>
+</header>
+
+<nav class="site-nav">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="setup.html" class="active">1. Set Up Ollama</a></li>
+    <li><a href="models.html">2. Model Choices</a></li>
+    <li><a href="drafting.html">3. Drafting</a></li>
+    <li><a href="editing.html">4. Editing</a></li>
+    <li><a href="brainstorming.html">5. Brainstorming</a></li>
+    <li><a href="privacy.html">6. Privacy</a></li>
+    <li><a href="templates.html">7. Prompt Templates</a></li>
+  </ul>
+</nav>
+
+<div class="wrapper">
+
+<section>
+  <h2>What Ollama is</h2>
+  <p>Ollama is a free program that runs AI models locally on your own computer. Think of it like a music player for AI: Ollama downloads and runs models, and your writing never leaves your machine.</p>
+</section>
+
+<section>
+  <h2>Step 1: Download Ollama</h2>
+  <ol>
+    <li>Go to <a href="https://ollama.com" target="_blank" rel="noopener">ollama.com</a>.</li>
+    <li>Click <strong>Download</strong> and choose your computer: Mac, Windows, or Linux.</li>
+    <li>Install Ollama like any other app &mdash; open the installer and follow the prompts.</li>
+  </ol>
+  <p>Once installed, Ollama runs in the background. You do not need to keep the Ollama website open.</p>
+</section>
+
+<section>
+  <h2>Step 2: Open your terminal</h2>
+  <p>Ollama is controlled from your computer's command line:</p>
+  <ul>
+    <li><strong>Mac:</strong> press <code>Command + Space</code>, type <code>Terminal</code>, press Enter.</li>
+    <li><strong>Windows:</strong> press the Windows key, type <code>PowerShell</code>, press Enter.</li>
+    <li><strong>Linux:</strong> open your terminal application.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Step 3: Check that Ollama is working</h2>
+  <pre><code>ollama --version</code></pre>
+  <p>You should see something like:</p>
+  <pre><code>ollama version is 0.5.7</code></pre>
+  <div class="callout warn">
+    <p>If you see <code>ollama: command not found</code>, Ollama may not be installed or your terminal needs restarting. Restart your terminal and try again.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Step 4: Pull your first writing model</h2>
+  <p>Models are the brains Ollama runs. To download a small, fast model good for writing:</p>
+  <pre><code>ollama pull llama3.2:3b</code></pre>
+  <p>This downloads the model to your computer. It may take a few minutes. Once downloaded, it stays on your computer &mdash; you do not need internet to use it afterward.</p>
+  <p>Other good first models:</p>
+  <pre><code>ollama pull phi3:mini
+ollama pull mistral-nemo:12b</code></pre>
+</section>
+
+<section>
+  <h2>Step 5: Run your first prompt</h2>
+  <pre><code>ollama run llama3.2:3b</code></pre>
+  <p>Type something like:</p>
+  <pre><code>Write a short, friendly opening paragraph for a letter to a new neighbor.</code></pre>
+  <p>The model will type out a reply on your screen, entirely on your computer. Type <code>/bye</code> to exit the chat.</p>
+</section>
+
+<section>
+  <h2>Step 6: Try a one-shot prompt</h2>
+  <p>You do not need to start a chat. Run a single prompt and exit:</p>
+  <pre><code>ollama run llama3.2:3b "Write a three-sentence bedtime story about a curious raccoon."</code></pre>
+</section>
+
+<section class="callout">
+  <h3>What just happened?</h3>
+  <ul>
+    <li>Ollama downloaded a model file to your computer (usually a few gigabytes).</li>
+    <li>When you run a prompt, your computer does the thinking &mdash; no server involved.</li>
+    <li>Your words never leave your machine. No account, no API key.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Troubleshooting</h2>
+  <table>
+    <thead><tr><th>Problem</th><th>What to try</th></tr></thead>
+    <tbody>
+      <tr><td><code>ollama: command not found</code></td><td>Reinstall Ollama, then restart your terminal</td></tr>
+      <tr><td>Pull takes a long time</td><td>The model is a few gigabytes; leave your computer awake and on Wi-Fi until it finishes</td></tr>
+      <tr><td>Model replies slowly</td><td>Your computer is doing all the work. Try a smaller model (<code>llama3.2:1b</code> or <code>phi3:mini</code>)</td></tr>
+      <tr><td>"Not enough memory"</td><td>Close other apps and try a smaller model</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <p><a href="models.html" class="btn">Next: Model Choices &rarr;</a> <a href="drafting.html" class="btn btn-ghost">Skip ahead: Drafting &rarr;</a></p>
+</section>
+
+</div>
+
+<footer class="site-footer">
+  <p>Published by <strong>Asdale Dynamics, LLC</strong> (Indiana, formed October 2026). MIT License. Copyright (c) 2026 Asdale Dynamics, LLC.</p>
+</footer>
+
+<script src="js/site.js"></script>
+</body>
+</html>
