@@ -9,7 +9,7 @@ Everything runs locally; nothing leaves your computer.
 
 Files:
 - LICENSE — MIT License, Copyright (c) 2026 Asdale Dynamics, LLC
-- README.md — overview, contents, privacy promise, credit to Asdale Dynamics, LLC
+- README.md — overview, contents, quick start, privacy promise, credit to Asdale Dynamics, LLC
 - docs/index.md — table of contents
 - docs/01-setup-ollama.md — step-by-step Ollama install and first prompt
 - docs/02-model-choices.md — model sizes and recommended starter models
